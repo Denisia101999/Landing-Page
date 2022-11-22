@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&family=Macondo&family=Montserrat:ital,wght@0,400;0,700;1,600&family=Oleo+Script+Swash+Caps&family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:ital,wght@0,400;1,600&family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 12rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.mainBackground {
+  background-image: url(https://s.iw.ro/gateway/g/ZmlsZVNvdXJjZT1odHRwJTNBJTJGJTJG/c3RvcmFnZTA2dHJhbnNjb2Rlci5yY3Mt/cmRzLnJvJTJGc3RvcmFnZSUyRjIwMjAl/MkYwOSUyRjI1JTJGMTIzMjA1Nl8xMjMy/MDU2X3BldHJlY2VyZS1yZXZlbGlvbi1H/ZXR0eUltYWdlcy04ODY5NDk3MDguanBn/Jnc9MTIwMCZoPTYzMCZ6Yz0xJmhhc2g9/NTE0OTk1MTA3MmFhNmVkNGI1YTU0MTU3NjliZWY5YzU=.thumb.jpg);
+  height: 700px;
+  background-size: cover;
+}
+
+.title {
+  color: white;
+  font-size: 2.5rem;
+  margin: 2em 5em 1.2em;
+}
+
+.title span {
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  font-size: 1.4em;
+  z-index: 1;
+}
+
+.title span::before {
+  content: " ";
+  width: 3em;
+  background-color: aqua;
+  height: 0.4em;
+  position: absolute;
+  bottom: 10px;
+  z-index: -1;
+}
+
+.lorem {
+  font-weight: bold;
+  color: white;
+  margin: 0 12em 3em;
+  max-width: 45em;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+form > label {
+  color: #e31c44;
+}
+form > p {
+  margin: 0;
+  color: gray;
+}
+.formContainer {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 50em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  margin-left: 12em;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+input[type="button"] {
+  background-color: orange;
+  border: none;
+  border-radius: 0.5em;
+  color: white;
+  padding: 1em 0;
+  width: 30%;
+  font-size: 1.3em;
+  height: 3em;
+  margin-left: 3em;
+}
+input[type="text"] {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 1em 0;
+  margin-top: 1em;
+}
+
+.callToAction {
+  display: flex;
+  margin: 0;
+  flex-direction: row-reverse;
+}
+
+.callToAction img {
+  max-width: 50%;
+}
+
+.callToActionMessage {
+  padding: 5em;
+  text-align: center;
+}
+
+.enjoy {
+  position: relative;
+  text-transform: uppercase;
+  display: block;
+}
+.enjoy::before {
+  content: " ";
+  width: 10em;
+  height: 0.3em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: darkturquoise;
+}
+
+.top {
+  animation: fadeIn 2s forwards;
+}
+@keyframes fadeIn {
+  from {
+    transform: translateY(-2em);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .lorem {
+    flex-direction: column;
+    width: 300px;
+    height: 60px;
+  }
+  .formContainer {
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+}
+@media screen and (max-width: 680px) {
+  .title {
+    max-width: 1.2em;
+  }
+  .formContainer {
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .callToAction {
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+  .summerImage {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .formContainer {
+    width: 70%;
+    height: 30%;
+    position: absolute;
+    margin-left: 20%;
+    margin-right: 10%;
+  }
+  form {
+    width: 60%;
+  }
+  .lorem {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mainBackground {
+    width: 100vw;
+    height: 150vw;
+  }
+  .logo {
+    margin-left: 1.3em;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+  .lorem {
+    margin: 0 6em 1em;
+    max-width: 15em;
+  }
+  .formContainer {
+    height: 45%;
+    width: 90%;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+    padding: 0;
+  }
+  form {
+    height: 5em;
+    width: 25em;
+    padding: 0.3em;
+  }
+  #fullName {
+    max-height: 10%;
+    margin-left: 20%;
+  }
+  form > label,
+  form > p {
+    font-size: 0.9em;
+    margin-left: 20%;
+  }
+  .book {
+    margin-right: 10%;
+  }
+}
